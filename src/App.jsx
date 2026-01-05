@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 import EasterEgg from './components/EasterEgg';
 import data from './data.json';
 
@@ -21,6 +22,7 @@ function App() {
       <Skills skills={data.skills} />
       <Experience experience={data.experience} />
       <Projects projects={data.projects} />
+      <Contact profile={data.profile} />
       {/* <EasterEgg /> */}
 
       <footer className="py-8 text-center text-slate-600 font-mono text-sm border-t border-slate-900 mt-20">
