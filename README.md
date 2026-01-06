@@ -1,40 +1,47 @@
 # Portfolio Web - Arthus SALOT-JAMART
 
-Ce projet est un portfolio personnel développé avec **Vite + React** et **Tailwind CSS**, conçu avec une esthétique "Systèmes Embarqués".
+Ce projet est un portfolio personnel développé avec **Vite + React** et **Tailwind CSS**.
 
-## 🚀 Comment lancer le projet
+🔗 **Version en ligne :** [https://schwanstern.github.io/Portfolio_Web/](https://schwanstern.github.io/Portfolio_Web/)
+
+---
+
+## 💻 Comment l'installer sur votre PC
+
+Si vous souhaitez modifier le site ou le lancer depuis votre ordinateur, voici la marche à suivre :
 
 ### Pré-requis
-Assurez-vous d'avoir **Node.js** installé (une version locale est disponible dans `.gemini/node` si besoin).
+*   Avoir **Node.js** installé ([Télécharger ici](https://nodejs.org/)).
+*   Avoir **Git** installé.
 
-### 1. Installation des dépendances
-Ouvrez un terminal dans le dossier du projet et exécutez :
+### 1. Cloner le projet
+Ouvrez un terminal (PowerShell ou CMD) et récupérez le code :
+```bash
+git clone https://github.com/schwanstern/Portfolio_Web.git
+cd Portfolio_Web
+```
+
+### 2. Installer les dépendances
+Installez les librairies nécessaires au projet :
 ```bash
 npm install
 ```
 
-### 2. Lancer le serveur de développement
-Pour voir le site et modifier le code en temps réel :
+### 3. Lancer le site
+Pour voir le site sur votre ordinateur :
 ```bash
 npm run dev
 ```
-Le site sera accessible à l'adresse indiquée (généralement `http://localhost:5173`).
+Ouvrez ensuite le lien qui s'affiche (ex: `http://localhost:5173`) dans votre navigateur.
 
-### 3. Construire pour la production
-Pour créer la version finale optimisée du site :
-```bash
-npm run build
-```
-Pour prévisualiser cette version finale :
-```bash
-npm run preview
-```
+---
 
-## 📝 Comment modifier le contenu
-Toutes les informations (Profil, Compétences, Expériences, Projets) sont stockées dans un seul fichier pour faciliter les mises à jour.
+## 📝 Modifier le contenu (CV, Expériences...)
+Tout le contenu est modifiable sans toucher au code complexe.
+Ouvrez simplement le fichier `src/data.json` avec un éditeur de texte (comme VS Code ou Notepad).
 
-- **Fichier à modifier** : [`src/data.json`](./src/data.json)
-- **Format** : JSON standard. Vous pouvez ajouter de nouvelles expériences ou projets simplement en ajoutant des éléments aux listes existantes.
+*   **Pour changer le CV** : Remplacez le fichier `public/cv.pdf` par votre propre fichier PDF (gardez le même nom ou mettez à jour `data.json`).
+*   **Pour ajouter un projet** : Ajoutez un bloc dans la liste `projects` du fichier JSON.
 
-## 🐣 Easter Egg
-Tapez **`viti`** sur votre clavier n'importe où sur le site pour activer le mode "Exxact Robotics" !
+## 🐣 Secret
+Tapez **`viti`** sur votre clavier pour activer le mode caché !

@@ -46,6 +46,10 @@ const Hero = ({ profile }) => {
                         className="px-6 py-3 border border-slate-700 text-slate-300 hover:border-slate-500 hover:text-white transition-all font-mono rounded">
                         GIT_PUSH_ORIGIN
                     </a>
+                    <a href={profile.links.resume} target="_blank" rel="noopener noreferrer" download
+                        className="px-6 py-3 bg-emerald-600/20 text-emerald-400 border border-emerald-500/50 hover:bg-emerald-600/40 transition-all font-mono rounded flex items-center">
+                        <span className="mr-2">⬇</span> DOWNLOAD_CV.pdf
+                    </a>
                 </div>
             </div>
         </div>
